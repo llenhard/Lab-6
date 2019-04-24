@@ -32,7 +32,7 @@ namespace Lab6
             {
                 int outcome = r.Next(0, diceSides + 1);
                 Console.WriteLine("Roll {0}: {1}", rolls, outcome);
-                System.Threading.Thread.Sleep(500);
+                System.Threading.Thread.Sleep(500); // random seeds with system time and im too tired to figure out how to work around that
                 return RollDice(diceSides, diceAmt - 1, rolls + 1);
             }
             else
